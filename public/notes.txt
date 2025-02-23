@@ -1,0 +1,9 @@
+npm create cloudflare@latest -- --template=cloudflare/templates/next-starter-template
+
+$ npm run cf-typegen
+$ npm i -D drizzle-kit
+$ npm i drizzle-orm
+$ npm run drizzle:generate
+$ npm run drizzle:migrate
+
+npm wrangler d1 migrations apply newdata --local

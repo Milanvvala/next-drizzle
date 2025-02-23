@@ -2,7 +2,7 @@ import type { NextRequest } from 'next/server'
 import { getRequestContext } from '@cloudflare/next-on-pages'
 import { v4 as uuidv4 } from 'uuid';
 import { drizzle } from 'drizzle-orm/d1';
-import { users } from '@schema/drizzle';
+import { users } from '@/drizzle/schema';
 
 export const runtime = 'edge'
 
